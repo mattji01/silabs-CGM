@@ -11,3 +11,7 @@ How to setup
 8. click stop session, the measurement will stop
 9. click disconnect, the app will disconnect the device 
 
+
+2021-8-26 v2.0
+combine BLE BGM with ADC part, run in silabs board
+
