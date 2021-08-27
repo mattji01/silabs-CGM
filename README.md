@@ -35,7 +35,7 @@ open EFR connect app, filter silabs-CGM, connect it.
 
 there are two major service, Glucose and the IADC service, the IADC service UUID is d29b8a73-cb31-4521-96a3-002037cdf2c3
 
-<img src=".\images\service.jpg" style="zoom:67%;" />
+<img src="./images/service.jpg" style="zoom:67%;" />
 
 ##### Get IADC data
 
@@ -43,29 +43,29 @@ tap More Info under the Unknown Service(IADC service), there are 7 characteristi
 
 1. internal ADC result(mV), UUID 94ec4ab6-0e78-45c7-ba7b-e4d85475b66e
 
-   ![](.\images\internal_adc.jpg)
+   ![](./images/internal_adc.jpg)
 
 2. external ADC result(mV), UUID b1410159-92e4-47d7-9cb0-52ccabb1b8d8
 
-   ![](.\images\external_adc.jpg)
+   ![](./images/external_adc.jpg)
 
 3. DAC adjust, set DAC output voltage level, in range of 0-1.25v, UUID b29b0be9-b008-4ec5-953b-3cd6208654a2, 
 
    write 0.625v to DAC
 
-   <img src=".\images\set_dac.jpg" style="zoom: 80%;" />
+   <img src="./images/set_dac.jpg" style="zoom: 80%;" />
 
 4. Die Temperature, UUID d211bc91-da0d-4198-8665-8967929574ba, read chipset die temperature
 
-   ![](.\images\temperature.jpg)
+   ![](./images/temperature.jpg)
 
 5. offset of the internal ADC(mV), UUID 8cd026a3-143a-425c-ad6d-f16ff09d9eff, 
 
-   ![](.\images\offset.jpg)
+   ![](./images/offset.jpg)
 
 6. Gain error of the internal ADC, UUID 1f61ad1f-742a-4790-adca-8f7a7cd9e42c
 
-   ![](.\images\gain_error.jpg)
+   ![](./images/gain_error.jpg)
 
 ##### Get Glucose data
 
@@ -76,11 +76,11 @@ tap More Info under the Unknown Service(IADC service), there are 7 characteristi
 5. set indicate of 0x2AAC characteristic(**CGM Specific Ops Control Point**),
 6. write "1A" to 0x2AAC, it means start session, you can find this test case in CGMS.TS.p6: CGMS/SEN/CGMCP/BV-22-C [CGM Specific Ops – ‘Start Session’
 
-![](.\images\start_session.jpg)
+![](./images/start_session.jpg)
 
 6. there will be 1 indication in 0x2AAC to show that start session success.
 
-<img src=".\images\succeed.jpg" style="zoom:67%;" />
+<img src="./images/succeed.jpg" style="zoom:67%;" />
 
 
 
@@ -88,7 +88,7 @@ tap More Info under the Unknown Service(IADC service), there are 7 characteristi
 
 5. the sensor(Silicon lab demo board) will continuous send notifications to 0x2AA7 characteristic until write 0x1B to 0x2AAC(stop session)
 
-<img src=".\images\notifications.jpg" style="zoom:67%;" />
+<img src="./images/notifications.jpg" style="zoom:67%;" />
 
 
 
