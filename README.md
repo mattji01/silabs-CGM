@@ -90,8 +90,6 @@ tap More Info under the Unknown Service(IADC service), there are 7 characteristi
 
 <img src="./images/notifications.jpg" style="zoom:67%;" />
 
-
-
 # Create an example application #
 
 1. create a soc ecmpty project and rename it to bluetooth_cgm_iadc
